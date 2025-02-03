@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(Images/para.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    /* Görüntü kalitesini artırma */
+    image-rendering: -webkit-optimize-contrast; /* WebKit için */
+    image-rendering: crisp-edges; /* Kenarları keskinleştirir */
+    image-rendering: pixelated; /* Pikselleşmeyi önler */
+}
+

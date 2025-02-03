@@ -1,0 +1,193 @@
+/* Container styles for centering */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Currency-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 2.5rem;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+}
+
+.currency-title {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.converter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.amount,
+.from-currency-option,
+.to-from-currency-option {
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #2c3e50;
+    background-color: white;
+    transition: all 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.amount::placeholder {
+    color: #95a5a6;
+}
+
+.amount:focus,
+.from-currency-option:focus,
+.to-from-currency-option:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.from-currency-option,
+.to-from-currency-option {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    background-size: 12px auto;
+    padding-right: 35px;
+}
+
+.convert-button {
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+    margin-top: 20px;
+    width: 200px;
+}
+
+.convert-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+    background: linear-gradient(145deg, #2980b9, #2573a7);
+}
+
+.convert-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+}
+
+/* Arrow Icon Styles */
+.Currency-div svg {
+    font-size: 45px;
+    color: #3498db;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.Currency-div svg:hover {
+    transform: scale(1.1);
+    color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Currency-div {
+        padding: 2rem;
+        width: 85%;
+        gap: 25px;
+    }
+
+    .converter-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-group {
+        max-width: 100%;
+    }
+
+    .Currency-div svg {
+        transform: rotate(90deg);
+        margin: 20px 0;
+        font-size: 45px;
+    }
+    
+    .Currency-div svg:hover {
+        transform: rotate(90deg) scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .Currency-div {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .currency-title {
+        font-size: 1.6rem;
+    }
+
+    .convert-button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+/* Hover Effects */
+.amount:hover,
+.from-currency-option:hover,
+.to-from-currency-option:hover {
+    border-color: #2196F3;
+}
+
+/* Disable number input arrows for all browsers */
+.amount::-webkit-outer-spin-button,
+.amount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.amount[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
