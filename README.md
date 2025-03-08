@@ -1,10 +1,10 @@
-# Döviz Kuru Hesaplama Uygulaması
+# Currency Exchange Rate Calculator
 
-Bu uygulama, farklı para birimleri arasında döviz kuru hesaplaması yapmak için kullanılan basit bir web arayüzü sunar. React ve Vite kullanılarak geliştirilmiştir.
+This application provides a simple web interface for calculating exchange rates between different currencies. It was developed using React and Vite.
 
-## Özellikler
+## Features
 
-- Farklı para birimleri arasında döviz kuru çevirisi
-- Gerçek zamanlı döviz kurları için FreeCurrencyAPI kullanımı
-- Kullanıcı dostu arayüz
-- Girdi doğrulaması ve hata mesajları
+- Currency conversion between different currencies
+- Real-time exchange rates using FreeCurrencyAPI
+- User-friendly interface
+- Input validation and error handling
