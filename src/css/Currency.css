@@ -191,3 +191,18 @@ body {
     -moz-appearance: textfield;
     appearance: textfield;
 }
+
+/* Hata mesajı stili */
+.error-message {
+    color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border-left: 3px solid #e74c3c;
+}
