@@ -7,4 +7,4 @@ This application provides a simple web interface for calculating exchange rates 
 - Currency conversion between different currencies
 - Real-time exchange rates using FreeCurrencyAPI
 - User-friendly interface
-- Input validation and error handling
+
